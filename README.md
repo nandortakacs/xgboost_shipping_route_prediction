@@ -118,7 +118,7 @@ Each model is defined by three axes: **grid resolution**, **feature set**, and *
 | `full_greedy`       | coarse  | full     | Greedy   | Coarse-grid weather-aware model |
 | `full_cisc`         | coarse  | full     | CISC     | Coarse-grid weather-aware with CISC rollouts |
 | `shortest_path`     | either  | —        | - | Graph - Dijkstra based shortest-path baseline (no ML) |
-| `company_baseline`  | either  | —        | -   | Graph with knowledge on typical shipping routes and irregular traffipax conditions - Dijkstra based (no ML)|
+| `company_baseline`  | either  | —        | -   | Graph with knowledge on typical shipping routes and irregular traffic conditions - Dijkstra based (no ML)|
 
 **Grid resolution:** `fine` (128×256) gives ~1° cells, `coarse` (32×64) gives ~5° cells.
 Select with `--grid fine` or `--grid coarse`.
