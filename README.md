@@ -34,27 +34,6 @@ pip install -e ".[shap]"    # + SHAP explainability
 pip install -e ".[all]"     # everything (gui + shap + dev)
 ```
 
-### Core dependencies
-
-| Package      | Version   | Purpose                          |
-|--------------|-----------|----------------------------------|
-| numpy        | ≥ 1.26    | Numerical operations             |
-| pandas       | ≥ 2.1     | Tabular data / evaluation CSVs   |
-| xgboost      | ≥ 2.0     | Gradient-boosted tree models     |
-| xarray       | ≥ 2024.1  | Grid / mask data loading         |
-| networkx     | ≥ 3.2     | Graph shortest-path baseline     |
-| matplotlib   | ≥ 3.8     | Static plots and histograms      |
-| cartopy      | ≥ 0.22    | Cartopy route map images         |
-| tqdm         | ≥ 4.66    | Progress bars                    |
-
-### Optional extras
-
-| Extra      | Packages               | When you need it                     |
-|------------|------------------------|--------------------------------------|
-| `gui`      | streamlit, plotly       | Interactive route prediction GUI     |
-| `shap`     | shap                   | SHAP feature-importance analysis     |
-| `dev`      | pytest, wandb          | Testing and experiment tracking      |
-
 ## Project layout
 
 ```
@@ -150,25 +129,6 @@ Select with `--grid fine` or `--grid coarse`.
 **Rollout strategy:** *Greedy* picks the highest-probability action at each step.
 *CISC* (Confidence-Informed Stochastic Control) runs multiple stochastic rollouts and selects the most promising action.
 
-> **Data availability note:** The AIS trajectory data and Copernicus Marine weather data used to train and evaluate models are **not included** in this repository (they are proprietary / licensed). As a result:
-> - **Training**, **evaluation**, and **CISC tuning** require trajectory data and cannot be run out of the box.
-> - **Full (weather-aware) models** require Copernicus Marine `.nc` files at inference time and will not work without them.
-> - **Company baseline** requires the AIS route database and is unavailable.
-> - **Simple models** (greedy and CISC) work fully with the included pretrained checkpoints, grid data, depth maps, port catalogues, and vessel metadata.
->
-> To use simple models, run inference as shown above — no additional data is needed.
-
-### Supported ports
-
-Routes can be specified by **UN/LOCODE** (`CNSHA`, `USLAX`, `NLRTM`, …) or
-by **common name** (`shanghai`, `los angeles`, `rotterdam`, …).  The full
-list of built-in ports spans Asia, Europe, the Americas, the Middle East,
-Africa, and Oceania — run `python -c "from shipping_route_predictor.config import
-WELL_KNOWN_PORTS; print(sorted(WELL_KNOWN_PORTS))"` to see all codes.
-
-Custom coordinates can always be supplied via `--start_lat`/`--start_lon`
-instead of a port name.
-
 ## SHAP explainability
 
 When `--shap` is passed to the CLI (or the SHAP checkbox is ticked in the
@@ -186,9 +146,14 @@ python -m shipping_route_predictor.inference --shap --model_types simple_greedy
 
 Results are saved to `results/shap_results/`.
 
-## Training, evaluation, and tuning
-
-> ⚠️ **Requires non-public data.** Training, evaluation, and CISC tuning all require AIS trajectory datasets (and Copernicus Marine weather data for full models) that are not included in this repository. The sections below document the commands for reference.
+## Unpublished components
+> **Data availability note:** The AIS trajectory data and Copernicus Marine weather data used to train and evaluate models are **not included** in this repository (they are proprietary / licensed). 
+> - **Training**, **evaluation**, and **CISC tuning** require trajectory data and cannot be run out of the box.
+> - **Full (weather-aware) models** require Copernicus Marine `.nc` files at inference time and will not work without them.
+> - **Company baseline** is not included as it is owned by the company.
+> - **Simple models** (greedy and CISC) work fully with the included pretrained checkpoints, grid data, depth maps, port catalogues, and vessel metadata.
+> To use simple models, run inference as shown above — no additional data is needed.
+## Training, evaluation, and tuning 
 
 ### Training
 
