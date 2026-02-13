@@ -103,7 +103,7 @@ bash bash_scripts/inference.sh --grid coarse --models "simple_greedy simple_cisc
 | `--output_dir`      | auto-generated                  | Where to save results                  |
 | `--no_visualize`    | off                             | Skip Cartopy route map                 |
 
-### Available models
+### Models
 
 Each model is defined by three axes: **grid resolution**, **feature set**, and **rollout strategy**.
 
@@ -117,8 +117,8 @@ Each model is defined by three axes: **grid resolution**, **feature set**, and *
 | `simple_cisc`       | coarse  | simple   | CISC     | Coarse-grid variant with CISC rollouts |
 | `full_greedy`       | coarse  | full     | Greedy   | Coarse-grid weather-aware model |
 | `full_cisc`         | coarse  | full     | CISC     | Coarse-grid weather-aware with CISC rollouts |
-| `shortest_path`     | either  | —        | Dijkstra | Graph shortest-path baseline (no ML) |
-| `company_baseline`  | either  | —        | Lookup   | Historical company route lookup from AIS route database |
+| `shortest_path`     | either  | —        | - | Graph - Dijkstra based shortest-path baseline (no ML) |
+| `company_baseline`  | either  | —        | -   | Graph with knowledge on typical shipping routes and irregular traffipax conditions - Dijkstra based (no ML)|
 
 **Grid resolution:** `fine` (128×256) gives ~1° cells, `coarse` (32×64) gives ~5° cells.
 Select with `--grid fine` or `--grid coarse`.
