@@ -1,0 +1,15 @@
+feature,mean_abs_shap
+dgoal_east_scaled,0.3758817274124718
+depth_norm,0.2968383460358574
+dgoal_north_scaled,0.2542311438401965
+cur_col,0.23533627550584624
+cur_row,0.010537469726762736
+start_flag,0.0046379327026686784
+here_flag,0.0
+company_id,0.0
+loa_norm,0.0
+goal_flag,0.0
+start_row,0.0
+start_col,0.0
+goal_row,0.0
+goal_col,0.0

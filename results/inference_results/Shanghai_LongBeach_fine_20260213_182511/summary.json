@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-02-13T17:25:31.124935+00:00",
+  "route": "Shanghai \u2192 Long Beach",
+  "grid": "fine",
+  "start_time": "2024-03-30T06:55:00Z",
+  "speed_kmh": 26.854000000000003,
+  "models": {
+    "simple_greedy": {
+      "reached_goal": true,
+      "num_steps": 89,
+      "total_distance_km": 11786.6,
+      "eta": "2024-04-17T13:49:46Z",
+      "elapsed_ms": 740.2
+    },
+    "shortest_path": {
+      "reached_goal": true,
+      "num_steps": 113,
+      "total_distance_km": 13044.5,
+      "eta": "2024-04-19T12:40:27Z",
+      "elapsed_ms": 30.8
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Coarse grid: 32×64
+Fine grid: 128×256
+Pooling: 4×4
+Valid cells: 1259/2048 (61.5%)
+Generated from: /work3/s232458/analytics-sailor/models/construction_data

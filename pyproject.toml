@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shipping-route-predictor"
+version = "0.0.0"
+description = "Shipping Route Predictor"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "xgboost>=2.0",
+    "xarray>=2024.1.0",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+    "cartopy>=0.22",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+gui = [
+    "streamlit>=1.30",
+    "plotly>=5.18",
+]
+shap = [
+    "shap>=0.50",
+]
+weather = [
+    "netCDF4>=1.7",
+]
+dev = [
+    "pytest>=8.0",
+    "wandb>=0.16",
+]
+all = [
+    "shipping-route-predictor[gui,shap,weather,dev]",
+]
+
+[tool.setuptools]
+package-dir = {"shipping_route_predictor" = "src"}
+packages = ["shipping_route_predictor"]
+
+[project.scripts]
+shipping-route-predictor-train = "shipping_route_predictor.train:main"
+shipping-route-predictor-inference = "shipping_route_predictor.inference:main"

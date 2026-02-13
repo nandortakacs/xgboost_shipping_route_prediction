@@ -1,0 +1,8 @@
+{
+  "train_accuracy": 0.9302383001813259,
+  "train_samples": 1024674,
+  "n_features": 14,
+  "best_iteration": 232,
+  "val_accuracy": 0.8945087744533947,
+  "val_samples": 111232
+}
