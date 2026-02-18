@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-02-16T12:17:42.733942",
+  "grid": "coarse",
+  "models": [
+    {
+      "num_trajectories": 50,
+      "success_rate": 0.98,
+      "frechet_km_mean": 1170.573948564127,
+      "frechet_km_median": 586.249576163862,
+      "frechet_success_mean": 997.2070586283888,
+      "frechet_success_median": 586.1978963401234,
+      "ms_per_traj_mean": 42.013659994117916,
+      "ms_per_traj_median": 25.08275001309812,
+      "ms_per_traj_p95": 135.87586490903044,
+      "ms_total": 2100.682999705896,
+      "model_name": "xgb_coarse_simple_greedy"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 1010.6021909755968,
+      "frechet_km_median": 586.3016535246958,
+      "frechet_success_mean": 1010.6021909755968,
+      "frechet_success_median": 586.3016535246958,
+      "ms_per_traj_mean": 508.0966939916834,
+      "ms_per_traj_median": 275.03874991089106,
+      "ms_per_traj_p95": 1679.4513850356445,
+      "ms_total": 25404.83469958417,
+      "model_name": "xgb_coarse_simple_cisc"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 934.9297433677089,
+      "frechet_km_median": 586.2499737009573,
+      "frechet_success_mean": 934.9297433677089,
+      "frechet_success_median": 586.2499737009573,
+      "ms_per_traj_mean": 39.08867600839585,
+      "ms_per_traj_median": 22.71845005452633,
+      "ms_per_traj_p95": 116.2151600467041,
+      "ms_total": 1954.4338004197925,
+      "model_name": "xgb_coarse_full_greedy"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 945.6663741491896,
+      "frechet_km_median": 574.1007517071126,
+      "frechet_success_mean": 945.6663741491896,
+      "frechet_success_median": 574.1007517071126,
+      "ms_per_traj_mean": 476.7072500055656,
+      "ms_per_traj_median": 257.4608001159504,
+      "ms_per_traj_p95": 1544.8956499225458,
+      "ms_total": 23835.36250027828,
+      "model_name": "xgb_coarse_full_cisc"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 1728.3642333857354,
+      "frechet_km_median": 625.4166532702546,
+      "frechet_success_mean": 1728.3642333857354,
+      "frechet_success_median": 625.4166532702546,
+      "ms_per_traj_mean": 0.9750139946117997,
+      "ms_per_traj_median": 0.28089992702007294,
+      "ms_per_traj_p95": 4.261065006721764,
+      "ms_total": 48.750699730589986,
+      "model_name": "shortest_path"
+    }
+  ]
+}

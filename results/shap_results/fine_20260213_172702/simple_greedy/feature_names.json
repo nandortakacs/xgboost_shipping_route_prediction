@@ -1,0 +1,16 @@
+[
+  "dgoal_east_scaled",
+  "dgoal_north_scaled",
+  "loa_norm",
+  "depth_norm",
+  "company_id",
+  "here_flag",
+  "start_flag",
+  "goal_flag",
+  "cur_row",
+  "cur_col",
+  "start_row",
+  "start_col",
+  "goal_row",
+  "goal_col"
+]

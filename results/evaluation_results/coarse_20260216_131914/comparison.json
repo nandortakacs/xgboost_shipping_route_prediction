@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-02-16T13:20:08.698250",
+  "grid": "coarse",
+  "models": [
+    {
+      "num_trajectories": 50,
+      "success_rate": 0.98,
+      "frechet_km_mean": 1183.0738125970292,
+      "frechet_km_median": 586.3012559876005,
+      "frechet_success_mean": 1009.9620219272688,
+      "frechet_success_median": 586.3012559876005,
+      "ms_per_traj_mean": 39.19317401945591,
+      "ms_per_traj_median": 21.051849937066436,
+      "ms_per_traj_p95": 111.55331002082673,
+      "ms_total": 1959.6587009727955,
+      "model_name": "xgb_coarse_simple_greedy"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 982.9251576418567,
+      "frechet_km_median": 586.3016535246958,
+      "frechet_success_mean": 982.9251576418567,
+      "frechet_success_median": 586.3016535246958,
+      "ms_per_traj_mean": 458.6605899874121,
+      "ms_per_traj_median": 219.25099997315556,
+      "ms_per_traj_p95": 1440.1869649416767,
+      "ms_total": 22933.029499370605,
+      "model_name": "xgb_coarse_simple_cisc"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 946.3267524664953,
+      "frechet_km_median": 586.2499737009573,
+      "frechet_success_mean": 946.3267524664953,
+      "frechet_success_median": 586.2499737009573,
+      "ms_per_traj_mean": 35.320162014104426,
+      "ms_per_traj_median": 20.93905000947416,
+      "ms_per_traj_p95": 106.92541499156503,
+      "ms_total": 1766.0081007052213,
+      "model_name": "xgb_coarse_full_greedy"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 910.525508166705,
+      "frechet_km_median": 482.55199771677974,
+      "frechet_success_mean": 910.525508166705,
+      "frechet_success_median": 482.55199771677974,
+      "ms_per_traj_mean": 445.5774740315974,
+      "ms_per_traj_median": 217.96714991796762,
+      "ms_per_traj_p95": 1503.9416351239195,
+      "ms_total": 22278.87370157987,
+      "model_name": "xgb_coarse_full_cisc"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 1728.3642333857354,
+      "frechet_km_median": 625.4166532702546,
+      "frechet_success_mean": 1728.3642333857354,
+      "frechet_success_median": 625.4166532702546,
+      "ms_per_traj_mean": 1.0069139814004302,
+      "ms_per_traj_median": 0.2971998183056712,
+      "ms_per_traj_p95": 4.372519894968717,
+      "ms_total": 50.34569907002151,
+      "model_name": "shortest_path"
+    },
+    {
+      "num_trajectories": 50,
+      "success_rate": 1.0,
+      "frechet_km_mean": 1390.8408011365846,
+      "frechet_km_median": 625.4165472263625,
+      "frechet_success_mean": 1390.8408011365846,
+      "frechet_success_median": 625.4165472263625,
+      "ms_per_traj_mean": 96.09938998240978,
+      "ms_per_traj_median": 42.55729995202273,
+      "ms_per_traj_p95": 437.82460994552804,
+      "ms_total": 4804.969499120489,
+      "model_name": "company_baseline"
+    }
+  ]
+}

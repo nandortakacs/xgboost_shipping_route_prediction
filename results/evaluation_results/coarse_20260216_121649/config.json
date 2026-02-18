@@ -1,0 +1,250 @@
+{
+  "grid": "coarse",
+  "rollouts": [
+    {
+      "grid": "coarse",
+      "device": "cpu",
+      "model": {
+        "name": "xgb_coarse_simple_greedy",
+        "model_type": "simple",
+        "path": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\models_pretrained\\xgboost_coarse_simple_32x64_d12_n500_20260108_165708\\xgboost_model_final.ubj",
+        "cisc": {
+          "n_rollouts": 10,
+          "alpha": 1.0,
+          "beta": 0.75,
+          "temperature": 1.1,
+          "hybrid_rollout": true
+        }
+      },
+      "env": {
+        "grid": "coarse",
+        "project_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor",
+        "mask_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\mask.csv",
+        "latitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\lat_mapping_table.csv",
+        "longitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\longitude_indices.csv",
+        "depth_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/depth_32x64.csv",
+        "grid_height": 32,
+        "grid_width": 64,
+        "train_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230101_to_20230401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230401_to_20230701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230701_to_20231001.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20231001_to_20240101.json"
+        ],
+        "val_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240101_to_20240401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240701_to_20241001.json"
+        ],
+        "eval_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240401_to_20240701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20241001_to_20250101.json"
+        ],
+        "vessels_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\vessel_data.json",
+        "max_traj_days": 42.0,
+        "max_coord_jump": 3,
+        "depth_norm_policy": "median",
+        "depth_median_m": 3990.81,
+        "vessel_median_loa_m": 184.8,
+        "goal_vector_norm_km": 2990.0
+      },
+      "weather": null,
+      "max_rollout_steps": 400
+    },
+    {
+      "grid": "coarse",
+      "device": "cpu",
+      "model": {
+        "name": "xgb_coarse_simple_cisc",
+        "model_type": "simple",
+        "path": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\models_pretrained\\xgboost_coarse_simple_32x64_d12_n500_20260108_165708\\xgboost_model_final.ubj",
+        "cisc": {
+          "n_rollouts": 10,
+          "alpha": 1.0,
+          "beta": 0.75,
+          "temperature": 1.1,
+          "hybrid_rollout": true
+        }
+      },
+      "env": {
+        "grid": "coarse",
+        "project_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor",
+        "mask_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\mask.csv",
+        "latitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\lat_mapping_table.csv",
+        "longitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\longitude_indices.csv",
+        "depth_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/depth_32x64.csv",
+        "grid_height": 32,
+        "grid_width": 64,
+        "train_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230101_to_20230401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230401_to_20230701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230701_to_20231001.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20231001_to_20240101.json"
+        ],
+        "val_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240101_to_20240401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240701_to_20241001.json"
+        ],
+        "eval_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240401_to_20240701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20241001_to_20250101.json"
+        ],
+        "vessels_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\vessel_data.json",
+        "max_traj_days": 42.0,
+        "max_coord_jump": 3,
+        "depth_norm_policy": "median",
+        "depth_median_m": 3990.81,
+        "vessel_median_loa_m": 184.8,
+        "goal_vector_norm_km": 2990.0
+      },
+      "weather": null,
+      "max_rollout_steps": 400
+    },
+    {
+      "grid": "coarse",
+      "device": "cpu",
+      "model": {
+        "name": "xgb_coarse_full_greedy",
+        "model_type": "full",
+        "path": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\models_pretrained\\xgboost_coarse_full_32x64_d12_n500_20260109_071709\\xgboost_model_final.ubj",
+        "cisc": {
+          "n_rollouts": 10,
+          "alpha": 1.0,
+          "beta": 0.0,
+          "temperature": 0.8,
+          "hybrid_rollout": true
+        }
+      },
+      "env": {
+        "grid": "coarse",
+        "project_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor",
+        "mask_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\mask.csv",
+        "latitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\lat_mapping_table.csv",
+        "longitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\longitude_indices.csv",
+        "depth_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/depth_32x64.csv",
+        "grid_height": 32,
+        "grid_width": 64,
+        "train_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230101_to_20230401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230401_to_20230701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230701_to_20231001.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20231001_to_20240101.json"
+        ],
+        "val_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240101_to_20240401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240701_to_20241001.json"
+        ],
+        "eval_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240401_to_20240701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20241001_to_20250101.json"
+        ],
+        "vessels_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\vessel_data.json",
+        "max_traj_days": 42.0,
+        "max_coord_jump": 3,
+        "depth_norm_policy": "median",
+        "depth_median_m": 3990.81,
+        "vessel_median_loa_m": 184.8,
+        "goal_vector_norm_km": 2990.0
+      },
+      "weather": {
+        "grid": "coarse",
+        "weather_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/weather_copernicus_marine_32x64",
+        "num_beam_slots": 8,
+        "num_history_slots": 6,
+        "beam_sector_deg": 180.0,
+        "beam_radius_steps": 10,
+        "beam_stride": 3,
+        "time_stride": 2,
+        "padding_value": -1000.0,
+        "wind_mean_kmh": 26.316,
+        "current_mean_kmh": 0.5976,
+        "wave_mean_m": 2.45,
+        "goal_vector_norm_km": 2990.0,
+        "vessel_vector_norm_km": 1190.0,
+        "speed_source": "loa_operator_table",
+        "operator_speed_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\operator_speed_kn_by_loa_bin.json",
+        "fixed_speed_kmh": 26.92
+      },
+      "max_rollout_steps": 400
+    },
+    {
+      "grid": "coarse",
+      "device": "cpu",
+      "model": {
+        "name": "xgb_coarse_full_cisc",
+        "model_type": "full",
+        "path": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\models_pretrained\\xgboost_coarse_full_32x64_d12_n500_20260109_071709\\xgboost_model_final.ubj",
+        "cisc": {
+          "n_rollouts": 10,
+          "alpha": 1.0,
+          "beta": 0.0,
+          "temperature": 0.8,
+          "hybrid_rollout": true
+        }
+      },
+      "env": {
+        "grid": "coarse",
+        "project_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor",
+        "mask_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\mask.csv",
+        "latitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\lat_mapping_table.csv",
+        "longitude_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/grid_construction_32x64\\longitude_indices.csv",
+        "depth_csv": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/depth_32x64.csv",
+        "grid_height": 32,
+        "grid_width": 64,
+        "train_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230101_to_20230401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230401_to_20230701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20230701_to_20231001.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20231001_to_20240101.json"
+        ],
+        "val_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240101_to_20240401.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240701_to_20241001.json"
+        ],
+        "eval_track_files": [
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20240401_to_20240701.json",
+          "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/trajectories_ais_32x64\\coarse_32x64_tracks_from_20241001_to_20250101.json"
+        ],
+        "vessels_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\vessel_data.json",
+        "max_traj_days": 42.0,
+        "max_coord_jump": 3,
+        "depth_norm_policy": "median",
+        "depth_median_m": 3990.81,
+        "vessel_median_loa_m": 184.8,
+        "goal_vector_norm_km": 2990.0
+      },
+      "weather": {
+        "grid": "coarse",
+        "weather_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\coarse_32x64_grid/weather_copernicus_marine_32x64",
+        "num_beam_slots": 8,
+        "num_history_slots": 6,
+        "beam_sector_deg": 180.0,
+        "beam_radius_steps": 10,
+        "beam_stride": 3,
+        "time_stride": 2,
+        "padding_value": -1000.0,
+        "wind_mean_kmh": 26.316,
+        "current_mean_kmh": 0.5976,
+        "wave_mean_m": 2.45,
+        "goal_vector_norm_km": 2990.0,
+        "vessel_vector_norm_km": 1190.0,
+        "speed_source": "loa_operator_table",
+        "operator_speed_json": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\data\\operator_speed_kn_by_loa_bin.json",
+        "fixed_speed_kmh": 26.92
+      },
+      "max_rollout_steps": 400
+    }
+  ],
+  "dataset": "eval",
+  "limit": 50,
+  "extra_steps_over_gt_length": 20,
+  "include_company_baseline": true,
+  "include_shortest_path_baseline": true,
+  "output_dir": "C:\\Users\\nando\\Documents\\master_thesis\\publishable_code\\shipping_route_predictor\\results\\evaluation_results",
+  "progress_save_interval": 50,
+  "visualize": true,
+  "histogram_bins": 50,
+  "histogram_metric": "frechet_km",
+  "log_level": "INFO",
+  "wandb_on": false,
+  "wandb_project": "shipping-route-predictor"
+}

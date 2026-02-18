@@ -1,0 +1,13 @@
+{
+  "num_trajectories": 50,
+  "success_rate": 1.0,
+  "frechet_km_mean": 1728.3642333857354,
+  "frechet_km_median": 625.4166532702546,
+  "frechet_success_mean": 1728.3642333857354,
+  "frechet_success_median": 625.4166532702546,
+  "ms_per_traj_mean": 0.9750139946117997,
+  "ms_per_traj_median": 0.28089992702007294,
+  "ms_per_traj_p95": 4.261065006721764,
+  "ms_total": 48.750699730589986,
+  "model_name": "shortest_path"
+}

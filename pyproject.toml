@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shipping-route-predictor"
+version = "0.0.0"
+description = "Shipping Route Predictor"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "xgboost>=2.0",
+    "xarray>=2024.1.0",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+    "cartopy>=0.22",
+    "tqdm>=4.66",
+    "shap>=0.50",
+    "wandb>=0.16",
+]
+
+[project.optional-dependencies]
+private = [
+    "sailing>=0.1",
+]
+
+[tool.setuptools]
+package-dir = {"shipping_route_predictor" = "src"}
+packages = ["shipping_route_predictor"]
+
+[project.scripts]
+shipping-route-predictor-train = "shipping_route_predictor.train:main"
+shipping-route-predictor-inference = "shipping_route_predictor.inference:main"
+shipping-route-predictor-eval = "shipping_route_predictor.eval:main"
+shipping-route-predictor-tune-cisc = "shipping_route_predictor.tune_cisc:main"

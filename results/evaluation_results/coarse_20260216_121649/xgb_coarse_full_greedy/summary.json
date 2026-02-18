@@ -1,0 +1,13 @@
+{
+  "num_trajectories": 50,
+  "success_rate": 1.0,
+  "frechet_km_mean": 934.9297433677089,
+  "frechet_km_median": 586.2499737009573,
+  "frechet_success_mean": 934.9297433677089,
+  "frechet_success_median": 586.2499737009573,
+  "ms_per_traj_mean": 39.08867600839585,
+  "ms_per_traj_median": 22.71845005452633,
+  "ms_per_traj_p95": 116.2151600467041,
+  "ms_total": 1954.4338004197925,
+  "model_name": "xgb_coarse_full_greedy"
+}

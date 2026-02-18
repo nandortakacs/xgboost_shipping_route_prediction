@@ -1,0 +1,1195 @@
+{
+  "model": "simple_greedy",
+  "grid": "fine",
+  "model_type": "simple",
+  "rollout_type": "greedy",
+  "start": {
+    "label": "Shanghai",
+    "lat": 31.641000747680664,
+    "lon": 121.64099884033203,
+    "rc": [
+      86,
+      214
+    ]
+  },
+  "goal": {
+    "label": "Long Beach",
+    "lat": 33.047000885009766,
+    "lon": -118.8280029296875,
+    "rc": [
+      87,
+      43
+    ]
+  },
+  "start_time": "2024-03-30T06:55:00Z",
+  "vessel_loa_m": 399.0,
+  "vessel_company": "msc",
+  "speed_kmh": 26.854000000000003,
+  "reached_goal": true,
+  "num_steps": 89,
+  "total_distance_km": 11786.6,
+  "elapsed_ms": 740.2,
+  "mean_prob": 0.8932772945951332,
+  "eta": "2024-04-17T13:49:46Z",
+  "waypoints": [
+    {
+      "step": 0,
+      "lat": 31.641,
+      "lon": 121.641,
+      "time_iso": "2024-03-30T06:55:00Z",
+      "elapsed_hours": 0.0,
+      "cumulative_km": 0.0,
+      "segment_km": 0.0
+    },
+    {
+      "step": 1,
+      "lat": 31.641,
+      "lon": 123.047,
+      "time_iso": "2024-03-30T11:52:23Z",
+      "elapsed_hours": 4.96,
+      "cumulative_km": 133.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 2,
+      "lat": 31.641,
+      "lon": 124.453,
+      "time_iso": "2024-03-30T16:49:46Z",
+      "elapsed_hours": 9.91,
+      "cumulative_km": 266.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 3,
+      "lat": 31.641,
+      "lon": 125.859,
+      "time_iso": "2024-03-30T21:47:09Z",
+      "elapsed_hours": 14.87,
+      "cumulative_km": 399.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 4,
+      "lat": 31.641,
+      "lon": 127.2655,
+      "time_iso": "2024-03-31T02:44:38Z",
+      "elapsed_hours": 19.83,
+      "cumulative_km": 532.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 5,
+      "lat": 31.641,
+      "lon": 128.672,
+      "time_iso": "2024-03-31T07:42:08Z",
+      "elapsed_hours": 24.79,
+      "cumulative_km": 665.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 6,
+      "lat": 31.641,
+      "lon": 130.078,
+      "time_iso": "2024-03-31T12:39:31Z",
+      "elapsed_hours": 29.74,
+      "cumulative_km": 798.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 7,
+      "lat": 30.2345,
+      "lon": 130.078,
+      "time_iso": "2024-03-31T18:28:57Z",
+      "elapsed_hours": 35.57,
+      "cumulative_km": 955.1,
+      "segment_km": 156.4
+    },
+    {
+      "step": 8,
+      "lat": 30.2345,
+      "lon": 131.4845,
+      "time_iso": "2024-03-31T23:30:51Z",
+      "elapsed_hours": 40.6,
+      "cumulative_km": 1090.2,
+      "segment_km": 135.1
+    },
+    {
+      "step": 9,
+      "lat": 31.641,
+      "lon": 131.4845,
+      "time_iso": "2024-04-01T05:20:17Z",
+      "elapsed_hours": 46.42,
+      "cumulative_km": 1246.6,
+      "segment_km": 156.4
+    },
+    {
+      "step": 10,
+      "lat": 31.641,
+      "lon": 132.891,
+      "time_iso": "2024-04-01T10:17:47Z",
+      "elapsed_hours": 51.38,
+      "cumulative_km": 1379.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 11,
+      "lat": 31.641,
+      "lon": 134.297,
+      "time_iso": "2024-04-01T15:15:10Z",
+      "elapsed_hours": 56.34,
+      "cumulative_km": 1512.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 12,
+      "lat": 31.641,
+      "lon": 135.703,
+      "time_iso": "2024-04-01T20:12:33Z",
+      "elapsed_hours": 61.29,
+      "cumulative_km": 1646.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 13,
+      "lat": 31.641,
+      "lon": 137.109,
+      "time_iso": "2024-04-02T01:09:56Z",
+      "elapsed_hours": 66.25,
+      "cumulative_km": 1779.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 14,
+      "lat": 31.641,
+      "lon": 138.5155,
+      "time_iso": "2024-04-02T06:07:25Z",
+      "elapsed_hours": 71.21,
+      "cumulative_km": 1912.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 15,
+      "lat": 31.641,
+      "lon": 139.922,
+      "time_iso": "2024-04-02T11:04:55Z",
+      "elapsed_hours": 76.17,
+      "cumulative_km": 2045.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 16,
+      "lat": 31.641,
+      "lon": 141.328,
+      "time_iso": "2024-04-02T16:02:18Z",
+      "elapsed_hours": 81.12,
+      "cumulative_km": 2178.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 17,
+      "lat": 31.641,
+      "lon": 142.7345,
+      "time_iso": "2024-04-02T20:59:47Z",
+      "elapsed_hours": 86.08,
+      "cumulative_km": 2311.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 18,
+      "lat": 31.641,
+      "lon": 144.141,
+      "time_iso": "2024-04-03T01:57:17Z",
+      "elapsed_hours": 91.04,
+      "cumulative_km": 2444.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 19,
+      "lat": 31.641,
+      "lon": 145.547,
+      "time_iso": "2024-04-03T06:54:40Z",
+      "elapsed_hours": 95.99,
+      "cumulative_km": 2577.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 20,
+      "lat": 31.641,
+      "lon": 146.953,
+      "time_iso": "2024-04-03T11:52:03Z",
+      "elapsed_hours": 100.95,
+      "cumulative_km": 2710.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 21,
+      "lat": 31.641,
+      "lon": 148.359,
+      "time_iso": "2024-04-03T16:49:26Z",
+      "elapsed_hours": 105.91,
+      "cumulative_km": 2844.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 22,
+      "lat": 31.641,
+      "lon": 149.7655,
+      "time_iso": "2024-04-03T21:46:56Z",
+      "elapsed_hours": 110.87,
+      "cumulative_km": 2977.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 23,
+      "lat": 31.641,
+      "lon": 151.172,
+      "time_iso": "2024-04-04T02:44:25Z",
+      "elapsed_hours": 115.82,
+      "cumulative_km": 3110.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 24,
+      "lat": 31.641,
+      "lon": 152.578,
+      "time_iso": "2024-04-04T07:41:48Z",
+      "elapsed_hours": 120.78,
+      "cumulative_km": 3243.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 25,
+      "lat": 31.641,
+      "lon": 153.9845,
+      "time_iso": "2024-04-04T12:39:18Z",
+      "elapsed_hours": 125.74,
+      "cumulative_km": 3376.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 26,
+      "lat": 31.641,
+      "lon": 155.391,
+      "time_iso": "2024-04-04T17:36:47Z",
+      "elapsed_hours": 130.7,
+      "cumulative_km": 3509.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 27,
+      "lat": 31.641,
+      "lon": 156.797,
+      "time_iso": "2024-04-04T22:34:10Z",
+      "elapsed_hours": 135.65,
+      "cumulative_km": 3642.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 28,
+      "lat": 31.641,
+      "lon": 158.203,
+      "time_iso": "2024-04-05T03:31:33Z",
+      "elapsed_hours": 140.61,
+      "cumulative_km": 3775.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 29,
+      "lat": 31.641,
+      "lon": 159.609,
+      "time_iso": "2024-04-05T08:28:56Z",
+      "elapsed_hours": 145.57,
+      "cumulative_km": 3909.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 30,
+      "lat": 31.641,
+      "lon": 161.0155,
+      "time_iso": "2024-04-05T13:26:26Z",
+      "elapsed_hours": 150.52,
+      "cumulative_km": 4042.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 31,
+      "lat": 31.641,
+      "lon": 162.422,
+      "time_iso": "2024-04-05T18:23:55Z",
+      "elapsed_hours": 155.48,
+      "cumulative_km": 4175.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 32,
+      "lat": 31.641,
+      "lon": 163.828,
+      "time_iso": "2024-04-05T23:21:18Z",
+      "elapsed_hours": 160.44,
+      "cumulative_km": 4308.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 33,
+      "lat": 31.641,
+      "lon": 165.2345,
+      "time_iso": "2024-04-06T04:18:48Z",
+      "elapsed_hours": 165.4,
+      "cumulative_km": 4441.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 34,
+      "lat": 31.641,
+      "lon": 166.641,
+      "time_iso": "2024-04-06T09:16:17Z",
+      "elapsed_hours": 170.35,
+      "cumulative_km": 4574.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 35,
+      "lat": 31.641,
+      "lon": 168.047,
+      "time_iso": "2024-04-06T14:13:40Z",
+      "elapsed_hours": 175.31,
+      "cumulative_km": 4707.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 36,
+      "lat": 31.641,
+      "lon": 169.453,
+      "time_iso": "2024-04-06T19:11:04Z",
+      "elapsed_hours": 180.27,
+      "cumulative_km": 4840.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 37,
+      "lat": 31.641,
+      "lon": 170.859,
+      "time_iso": "2024-04-07T00:08:27Z",
+      "elapsed_hours": 185.22,
+      "cumulative_km": 4974.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 38,
+      "lat": 31.641,
+      "lon": 172.2655,
+      "time_iso": "2024-04-07T05:05:56Z",
+      "elapsed_hours": 190.18,
+      "cumulative_km": 5107.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 39,
+      "lat": 31.641,
+      "lon": 173.672,
+      "time_iso": "2024-04-07T10:03:26Z",
+      "elapsed_hours": 195.14,
+      "cumulative_km": 5240.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 40,
+      "lat": 31.641,
+      "lon": 175.078,
+      "time_iso": "2024-04-07T15:00:49Z",
+      "elapsed_hours": 200.1,
+      "cumulative_km": 5373.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 41,
+      "lat": 31.641,
+      "lon": 176.4845,
+      "time_iso": "2024-04-07T19:58:18Z",
+      "elapsed_hours": 205.06,
+      "cumulative_km": 5506.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 42,
+      "lat": 31.641,
+      "lon": 177.891,
+      "time_iso": "2024-04-08T00:55:48Z",
+      "elapsed_hours": 210.01,
+      "cumulative_km": 5639.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 43,
+      "lat": 31.641,
+      "lon": 179.297,
+      "time_iso": "2024-04-08T05:53:11Z",
+      "elapsed_hours": 214.97,
+      "cumulative_km": 5772.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 44,
+      "lat": 31.641,
+      "lon": -179.297,
+      "time_iso": "2024-04-08T10:50:34Z",
+      "elapsed_hours": 219.93,
+      "cumulative_km": 5905.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 45,
+      "lat": 31.641,
+      "lon": -177.891,
+      "time_iso": "2024-04-08T15:47:57Z",
+      "elapsed_hours": 224.88,
+      "cumulative_km": 6039.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 46,
+      "lat": 31.641,
+      "lon": -176.4845,
+      "time_iso": "2024-04-08T20:45:26Z",
+      "elapsed_hours": 229.84,
+      "cumulative_km": 6172.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 47,
+      "lat": 31.641,
+      "lon": -175.078,
+      "time_iso": "2024-04-09T01:42:56Z",
+      "elapsed_hours": 234.8,
+      "cumulative_km": 6305.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 48,
+      "lat": 31.641,
+      "lon": -173.672,
+      "time_iso": "2024-04-09T06:40:19Z",
+      "elapsed_hours": 239.76,
+      "cumulative_km": 6438.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 49,
+      "lat": 31.641,
+      "lon": -172.2655,
+      "time_iso": "2024-04-09T11:37:48Z",
+      "elapsed_hours": 244.71,
+      "cumulative_km": 6571.5,
+      "segment_km": 133.1
+    },
+    {
+      "step": 50,
+      "lat": 31.641,
+      "lon": -170.859,
+      "time_iso": "2024-04-09T16:35:18Z",
+      "elapsed_hours": 249.67,
+      "cumulative_km": 6704.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 51,
+      "lat": 31.641,
+      "lon": -169.453,
+      "time_iso": "2024-04-09T21:32:41Z",
+      "elapsed_hours": 254.63,
+      "cumulative_km": 6837.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 52,
+      "lat": 31.641,
+      "lon": -168.047,
+      "time_iso": "2024-04-10T02:30:04Z",
+      "elapsed_hours": 259.58,
+      "cumulative_km": 6970.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 53,
+      "lat": 31.641,
+      "lon": -166.641,
+      "time_iso": "2024-04-10T07:27:27Z",
+      "elapsed_hours": 264.54,
+      "cumulative_km": 7104.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 54,
+      "lat": 31.641,
+      "lon": -165.2345,
+      "time_iso": "2024-04-10T12:24:57Z",
+      "elapsed_hours": 269.5,
+      "cumulative_km": 7237.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 55,
+      "lat": 31.641,
+      "lon": -163.828,
+      "time_iso": "2024-04-10T17:22:26Z",
+      "elapsed_hours": 274.46,
+      "cumulative_km": 7370.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 56,
+      "lat": 31.641,
+      "lon": -162.422,
+      "time_iso": "2024-04-10T22:19:49Z",
+      "elapsed_hours": 279.41,
+      "cumulative_km": 7503.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 57,
+      "lat": 31.641,
+      "lon": -161.0155,
+      "time_iso": "2024-04-11T03:17:19Z",
+      "elapsed_hours": 284.37,
+      "cumulative_km": 7636.5,
+      "segment_km": 133.1
+    },
+    {
+      "step": 58,
+      "lat": 31.641,
+      "lon": -159.609,
+      "time_iso": "2024-04-11T08:14:48Z",
+      "elapsed_hours": 289.33,
+      "cumulative_km": 7769.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 59,
+      "lat": 31.641,
+      "lon": -158.203,
+      "time_iso": "2024-04-11T13:12:11Z",
+      "elapsed_hours": 294.29,
+      "cumulative_km": 7902.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 60,
+      "lat": 31.641,
+      "lon": -156.797,
+      "time_iso": "2024-04-11T18:09:34Z",
+      "elapsed_hours": 299.24,
+      "cumulative_km": 8035.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 61,
+      "lat": 31.641,
+      "lon": -155.391,
+      "time_iso": "2024-04-11T23:06:57Z",
+      "elapsed_hours": 304.2,
+      "cumulative_km": 8169.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 62,
+      "lat": 31.641,
+      "lon": -153.9845,
+      "time_iso": "2024-04-12T04:04:27Z",
+      "elapsed_hours": 309.16,
+      "cumulative_km": 8302.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 63,
+      "lat": 31.641,
+      "lon": -152.578,
+      "time_iso": "2024-04-12T09:01:56Z",
+      "elapsed_hours": 314.12,
+      "cumulative_km": 8435.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 64,
+      "lat": 31.641,
+      "lon": -151.172,
+      "time_iso": "2024-04-12T13:59:19Z",
+      "elapsed_hours": 319.07,
+      "cumulative_km": 8568.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 65,
+      "lat": 31.641,
+      "lon": -149.7655,
+      "time_iso": "2024-04-12T18:56:49Z",
+      "elapsed_hours": 324.03,
+      "cumulative_km": 8701.5,
+      "segment_km": 133.1
+    },
+    {
+      "step": 66,
+      "lat": 31.641,
+      "lon": -148.359,
+      "time_iso": "2024-04-12T23:54:18Z",
+      "elapsed_hours": 328.99,
+      "cumulative_km": 8834.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 67,
+      "lat": 31.641,
+      "lon": -146.953,
+      "time_iso": "2024-04-13T04:51:41Z",
+      "elapsed_hours": 333.94,
+      "cumulative_km": 8967.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 68,
+      "lat": 31.641,
+      "lon": -145.547,
+      "time_iso": "2024-04-13T09:49:04Z",
+      "elapsed_hours": 338.9,
+      "cumulative_km": 9100.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 69,
+      "lat": 31.641,
+      "lon": -144.141,
+      "time_iso": "2024-04-13T14:46:27Z",
+      "elapsed_hours": 343.86,
+      "cumulative_km": 9234.0,
+      "segment_km": 133.1
+    },
+    {
+      "step": 70,
+      "lat": 31.641,
+      "lon": -142.7345,
+      "time_iso": "2024-04-13T19:43:57Z",
+      "elapsed_hours": 348.82,
+      "cumulative_km": 9367.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 71,
+      "lat": 31.641,
+      "lon": -141.328,
+      "time_iso": "2024-04-14T00:41:26Z",
+      "elapsed_hours": 353.77,
+      "cumulative_km": 9500.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 72,
+      "lat": 31.641,
+      "lon": -139.922,
+      "time_iso": "2024-04-14T05:38:50Z",
+      "elapsed_hours": 358.73,
+      "cumulative_km": 9633.4,
+      "segment_km": 133.1
+    },
+    {
+      "step": 73,
+      "lat": 31.641,
+      "lon": -138.5155,
+      "time_iso": "2024-04-14T10:36:19Z",
+      "elapsed_hours": 363.69,
+      "cumulative_km": 9766.5,
+      "segment_km": 133.1
+    },
+    {
+      "step": 74,
+      "lat": 31.641,
+      "lon": -137.109,
+      "time_iso": "2024-04-14T15:33:49Z",
+      "elapsed_hours": 368.65,
+      "cumulative_km": 9899.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 75,
+      "lat": 31.641,
+      "lon": -135.703,
+      "time_iso": "2024-04-14T20:31:12Z",
+      "elapsed_hours": 373.6,
+      "cumulative_km": 10032.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 76,
+      "lat": 31.641,
+      "lon": -134.297,
+      "time_iso": "2024-04-15T01:28:35Z",
+      "elapsed_hours": 378.56,
+      "cumulative_km": 10165.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 77,
+      "lat": 31.641,
+      "lon": -132.891,
+      "time_iso": "2024-04-15T06:25:58Z",
+      "elapsed_hours": 383.52,
+      "cumulative_km": 10298.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 78,
+      "lat": 31.641,
+      "lon": -131.4845,
+      "time_iso": "2024-04-15T11:23:27Z",
+      "elapsed_hours": 388.47,
+      "cumulative_km": 10432.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 79,
+      "lat": 31.641,
+      "lon": -130.078,
+      "time_iso": "2024-04-15T16:20:57Z",
+      "elapsed_hours": 393.43,
+      "cumulative_km": 10565.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 80,
+      "lat": 31.641,
+      "lon": -128.672,
+      "time_iso": "2024-04-15T21:18:20Z",
+      "elapsed_hours": 398.39,
+      "cumulative_km": 10698.3,
+      "segment_km": 133.1
+    },
+    {
+      "step": 81,
+      "lat": 31.641,
+      "lon": -127.2655,
+      "time_iso": "2024-04-16T02:15:49Z",
+      "elapsed_hours": 403.35,
+      "cumulative_km": 10831.5,
+      "segment_km": 133.1
+    },
+    {
+      "step": 82,
+      "lat": 31.641,
+      "lon": -125.859,
+      "time_iso": "2024-04-16T07:13:19Z",
+      "elapsed_hours": 408.31,
+      "cumulative_km": 10964.6,
+      "segment_km": 133.1
+    },
+    {
+      "step": 83,
+      "lat": 31.641,
+      "lon": -124.453,
+      "time_iso": "2024-04-16T12:10:42Z",
+      "elapsed_hours": 413.26,
+      "cumulative_km": 11097.7,
+      "segment_km": 133.1
+    },
+    {
+      "step": 84,
+      "lat": 31.641,
+      "lon": -123.047,
+      "time_iso": "2024-04-16T17:08:05Z",
+      "elapsed_hours": 418.22,
+      "cumulative_km": 11230.8,
+      "segment_km": 133.1
+    },
+    {
+      "step": 85,
+      "lat": 31.641,
+      "lon": -121.641,
+      "time_iso": "2024-04-16T22:05:28Z",
+      "elapsed_hours": 423.17,
+      "cumulative_km": 11363.9,
+      "segment_km": 133.1
+    },
+    {
+      "step": 86,
+      "lat": 31.641,
+      "lon": -120.2345,
+      "time_iso": "2024-04-17T03:02:57Z",
+      "elapsed_hours": 428.13,
+      "cumulative_km": 11497.1,
+      "segment_km": 133.1
+    },
+    {
+      "step": 87,
+      "lat": 31.641,
+      "lon": -118.828,
+      "time_iso": "2024-04-17T08:00:27Z",
+      "elapsed_hours": 433.09,
+      "cumulative_km": 11630.2,
+      "segment_km": 133.1
+    },
+    {
+      "step": 88,
+      "lat": 33.047,
+      "lon": -118.828,
+      "time_iso": "2024-04-17T13:49:46Z",
+      "elapsed_hours": 438.91,
+      "cumulative_km": 11786.6,
+      "segment_km": 156.3
+    }
+  ],
+  "grid_path": [
+    [
+      86,
+      214
+    ],
+    [
+      86,
+      215
+    ],
+    [
+      86,
+      216
+    ],
+    [
+      86,
+      217
+    ],
+    [
+      86,
+      218
+    ],
+    [
+      86,
+      219
+    ],
+    [
+      86,
+      220
+    ],
+    [
+      85,
+      220
+    ],
+    [
+      85,
+      221
+    ],
+    [
+      86,
+      221
+    ],
+    [
+      86,
+      222
+    ],
+    [
+      86,
+      223
+    ],
+    [
+      86,
+      224
+    ],
+    [
+      86,
+      225
+    ],
+    [
+      86,
+      226
+    ],
+    [
+      86,
+      227
+    ],
+    [
+      86,
+      228
+    ],
+    [
+      86,
+      229
+    ],
+    [
+      86,
+      230
+    ],
+    [
+      86,
+      231
+    ],
+    [
+      86,
+      232
+    ],
+    [
+      86,
+      233
+    ],
+    [
+      86,
+      234
+    ],
+    [
+      86,
+      235
+    ],
+    [
+      86,
+      236
+    ],
+    [
+      86,
+      237
+    ],
+    [
+      86,
+      238
+    ],
+    [
+      86,
+      239
+    ],
+    [
+      86,
+      240
+    ],
+    [
+      86,
+      241
+    ],
+    [
+      86,
+      242
+    ],
+    [
+      86,
+      243
+    ],
+    [
+      86,
+      244
+    ],
+    [
+      86,
+      245
+    ],
+    [
+      86,
+      246
+    ],
+    [
+      86,
+      247
+    ],
+    [
+      86,
+      248
+    ],
+    [
+      86,
+      249
+    ],
+    [
+      86,
+      250
+    ],
+    [
+      86,
+      251
+    ],
+    [
+      86,
+      252
+    ],
+    [
+      86,
+      253
+    ],
+    [
+      86,
+      254
+    ],
+    [
+      86,
+      255
+    ],
+    [
+      86,
+      0
+    ],
+    [
+      86,
+      1
+    ],
+    [
+      86,
+      2
+    ],
+    [
+      86,
+      3
+    ],
+    [
+      86,
+      4
+    ],
+    [
+      86,
+      5
+    ],
+    [
+      86,
+      6
+    ],
+    [
+      86,
+      7
+    ],
+    [
+      86,
+      8
+    ],
+    [
+      86,
+      9
+    ],
+    [
+      86,
+      10
+    ],
+    [
+      86,
+      11
+    ],
+    [
+      86,
+      12
+    ],
+    [
+      86,
+      13
+    ],
+    [
+      86,
+      14
+    ],
+    [
+      86,
+      15
+    ],
+    [
+      86,
+      16
+    ],
+    [
+      86,
+      17
+    ],
+    [
+      86,
+      18
+    ],
+    [
+      86,
+      19
+    ],
+    [
+      86,
+      20
+    ],
+    [
+      86,
+      21
+    ],
+    [
+      86,
+      22
+    ],
+    [
+      86,
+      23
+    ],
+    [
+      86,
+      24
+    ],
+    [
+      86,
+      25
+    ],
+    [
+      86,
+      26
+    ],
+    [
+      86,
+      27
+    ],
+    [
+      86,
+      28
+    ],
+    [
+      86,
+      29
+    ],
+    [
+      86,
+      30
+    ],
+    [
+      86,
+      31
+    ],
+    [
+      86,
+      32
+    ],
+    [
+      86,
+      33
+    ],
+    [
+      86,
+      34
+    ],
+    [
+      86,
+      35
+    ],
+    [
+      86,
+      36
+    ],
+    [
+      86,
+      37
+    ],
+    [
+      86,
+      38
+    ],
+    [
+      86,
+      39
+    ],
+    [
+      86,
+      40
+    ],
+    [
+      86,
+      41
+    ],
+    [
+      86,
+      42
+    ],
+    [
+      86,
+      43
+    ],
+    [
+      87,
+      43
+    ]
+  ]
+}
